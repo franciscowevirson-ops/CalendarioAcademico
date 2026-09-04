@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <title>Gestão Acadêmica</title> 
+    <link rel="stylesheet" href="../styles/new.css">
+    <title>Calendário Acadêmico</title> 
 </head>
 <body>
 
@@ -12,7 +12,7 @@
 
         <nav>
             <div class="Head-Icon">
-                <img class="icon" src="../imgs/index/Head-Icon.jpg" height="50px">
+                <img class="icon" src="../imgs/new/Head-Icon.jpg" height="50px">
                 <li>Turma 1</li>
             </div>
             <ul>
@@ -34,7 +34,7 @@
                     <h1>Bacharelado em <br>Inteligência Artificial</h1>
                 </div>
                 <div class="agent-img">
-                    <img class="agent" src="../imgs/index/agent-icon.png">
+                    <img class="agent" src="../imgs/new/agent-icon.png">
                 </div>
             </div>
         </div>
@@ -42,34 +42,41 @@
     </header>
 
     <main>
+        <!-- Add new task -->
 
-        <div class="navagation-buttons">
-            <button class="nav-button">Todos</button>
-            <button class="nav-button">Provas</button>
-            <button class="nav-button">Eventos</button>
-            <button class="nav-button">Atividades</button>
-        </div>
+        <section class="new-task">
+            <div class="container-chatbox">
+                <div class="bia-ai">
+                    <img class="Head-Icon" src="../imgs/new/Head-Icon.jpg" height="50px">
+                    <p>BiaAI</p>
+                </div>
 
-        <section class="content">
-
-            <div class="box">
-                <li class="item">
-                    <p>descrição</p>
-                    <p>data e hora se aplicavel</p>
-                </li>
-                <li class="item">
-                    <p>descrição</p>
-                    <p>data e hora se aplicavel</p>
-                </li>
-                <li class="item">
-                    <p>descrição</p>
-                    <p>data e hora se aplicavel</p>
-                </li>
+                <div class="text-area">
+                    <input type="text" placeholder="Digite ou cole informações da atividade/evento.">
+                </div>
             </div>
+            <!-- <div class="reponse-area"></div> -->
 
         </section>
 
-  </main>
+        <section class="verification">
+
+            <h2>Verifique as informações</h2>
+
+            <div class="response">
+                <p id="responseAI">
+
+                </p>
+            </div>
+
+            <div class="verification-area">
+                    <button id="send">Confirmar</button>
+                    <button id="edit">Editar</button>
+                </div>
+
+        </section>
+
+    </main>
 
     <footer>
 

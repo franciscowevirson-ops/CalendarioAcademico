@@ -37,7 +37,7 @@ Texto: {texto}"""
     headers={"Authorization": f"Bearer {OPENROUTER_KEY}"},
     json={"model": "inclusionai/ling-3.0-flash-vl:free", "messages": [{"role": "user", "content": prompt}]}
 )
-
+    
     print("STATUS:", resp.status_code)
     print("BODY:", resp.text)
 

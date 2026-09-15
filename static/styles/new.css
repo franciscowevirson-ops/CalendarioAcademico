@@ -162,6 +162,18 @@ h2 {
     scrollbar-color: #443d96 transparent;
 }
 
+#send-text {
+    border-radius: 50%;
+    border: solid rgb(240, 239, 238) 1.5px;
+    padding: 0.5rem;
+    color: antiquewhite;
+    transition: 1s;
+}
+
+#send-text:hover {
+    background-color: white;
+    color: rgb(4, 41, 253);
+}
 
 .response {
     background: linear-gradient(135deg, #5d185d, #15518d);
@@ -188,7 +200,7 @@ h2 {
 }
 
 #send {
-    background-color: #04fe85;
+    background-color: #04d8fe;
     color: #13110c;
     border-radius: 0.7rem;
     padding: 0.2rem;
@@ -196,7 +208,7 @@ h2 {
     width: 5rem;
 }
 #edit {
-    background-color: #ccfe04;
+    background-color: #fe04b3;
     color: #13110c;
     border-radius: 0.7rem;
     padding: 0.2rem;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../static/styles/style.css">
     <title>Gestão Acadêmica</title> 
 </head>
 <body>
@@ -12,19 +12,25 @@
 
         <nav>
             <div class="Head-Icon">
-                <img class="icon" src="../imgs/index/Head-Icon.jpg" height="50px">
+                <img class="icon" src="../static/imgs/index/Head-Icon.jpg" height="50px">
                 <li>Turma 1</li>
             </div>
             <ul>
-                <button>
-                    <li>Calendário</li>
-                </button>
-                <button>
-                    <li>Disciplinas</li>
-                </button>
-                <button>
-                    <li>Sobre</li>
-                </button>
+                <a href="/new">
+                    <button >
+                        <li>Adicionar</li>
+                    </button>
+                </a>
+                <a href="">
+                    <button>
+                        <li>Disciplinas</li>
+                    </button>
+                </a>
+                <a href="">
+                    <button>
+                        <li>Sobre</li>
+                    </button>
+                </a>
             </ul>
         </nav>
 
@@ -34,7 +40,7 @@
                     <h1>Bacharelado em <br>Inteligência Artificial</h1>
                 </div>
                 <div class="agent-img">
-                    <img class="agent" src="../imgs/index/agent-icon.png">
+                    <img class="agent" src="../static/imgs/index/agent-icon.png">
                 </div>
             </div>
         </div>
@@ -53,7 +59,7 @@
         <section class="content">
 
             <div class="box">
-                <li class="item">
+                <!-- <li class="item">
                     <p>descrição</p>
                     <p>data e hora se aplicavel</p>
                 </li>
@@ -64,7 +70,7 @@
                 <li class="item">
                     <p>descrição</p>
                     <p>data e hora se aplicavel</p>
-                </li>
+                </li> -->
             </div>
 
         </section>
@@ -79,6 +85,6 @@
 
     </footer>
 
-    <script src="js\script.js"></script>
+    <script src="../static/js/script.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/new.css">
+    <link rel="stylesheet" href="../static/styles/new.css">
     <title>Calendário Acadêmico</title> 
 </head>
 <body>
@@ -12,12 +12,12 @@
 
         <nav>
             <div class="Head-Icon">
-                <img class="icon" src="../imgs/new/Head-Icon.jpg" height="50px">
+                <img class="icon" src="../static/imgs/new/Head-Icon.jpg" height="50px">
                 <li>Turma 1</li>
             </div>
             <ul>
                 <button>
-                    <li>Calendário</li>
+                    <li>Adicionar</li>
                 </button>
                 <button>
                     <li>Disciplinas</li>
@@ -34,7 +34,7 @@
                     <h1>Bacharelado em <br>Inteligência Artificial</h1>
                 </div>
                 <div class="agent-img">
-                    <img class="agent" src="../imgs/new/agent-icon.png">
+                    <img class="agent" src="../static/imgs/new/agent-icon.png">
                 </div>
             </div>
         </div>
@@ -47,23 +47,26 @@
         <section class="new-task">
             <div class="container-chatbox">
                 <div class="bia-ai">
-                    <img class="Head-Icon" src="../imgs/new/Head-Icon.jpg" height="50px">
+                    <img class="Head-Icon" src="../static/imgs/new/Head-Icon.jpg" height="50px">
                     <p>BiaAI</p>
                 </div>
 
                 <div class="text-area">
-                    <input type="text" placeholder="Digite ou cole informações da atividade/evento.">
+                    <form action="/extrair-dados" id="formAI">
+                        <input id="user-text" type="text" placeholder="Digite ou cole informações da atividade/evento.">
+                        <button id = "send-text" type="button">></button>
+                    </form>
                 </div>
             </div>
             <!-- <div class="reponse-area"></div> -->
 
         </section>
 
-        <section class="verification">
+        <section class="verification" id="verification">
 
-            <h2>Verifique as informações</h2>
+            <!-- <h2>Verifique as informações</h2>
 
-            <div class="response">
+            <div class="response" id="target">
                 <p id="responseAI">
 
                 </p>
@@ -72,7 +75,7 @@
             <div class="verification-area">
                     <button id="send">Confirmar</button>
                     <button id="edit">Editar</button>
-                </div>
+                </div> -->
 
         </section>
 
@@ -86,6 +89,6 @@
 
     </footer>
 
-    <script src="js\script.js"></script>
+    <script src="../static/js/script.js"></script>
 </body>
 </html>

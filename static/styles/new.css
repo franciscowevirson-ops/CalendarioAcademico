@@ -44,6 +44,13 @@ button {
     border-radius: 0.5rem;
 }
 
+.AI-icon {
+    height: 2.0rem;
+    width: 2.0rem;
+    border-radius: 0.5rem;
+}
+
+
 ul {
     list-style: none;
     display: flex;

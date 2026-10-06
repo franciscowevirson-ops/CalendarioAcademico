@@ -35,7 +35,7 @@ Texto: {texto}"""
     resp = requests.post(
     "https://openrouter.ai/api/v1/chat/completions",
     headers={"Authorization": f"Bearer {OPENROUTER_KEY}"},
-    json={"model": "inclusionai/ling-3.0-flash-vl:free", "messages": [{"role": "user", "content": prompt}]}
+    json={"model": "apodex/apodex-1.1-mini:free", "messages": [{"role": "user", "content": prompt}]}
 )
     
     print("STATUS:", resp.status_code)
